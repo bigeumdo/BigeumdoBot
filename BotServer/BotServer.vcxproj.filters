@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{36380610-c0d9-4be1-80b3-3211cfcdff00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{1257f756-856f-4a6c-8ec0-7fdebe5fa880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DB">
+      <UniqueIdentifier>{92d15412-6c0e-45d1-b04d-b1531c5ad5f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bot">
+      <UniqueIdentifier>{ae89ec45-a0c6-4a94-87d9-14d4c5bd96e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bot\Games">
+      <UniqueIdentifier>{702381b6-0a39-42c6-84f9-903f161c0277}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="BotRegsterService.cpp">
+      <Filter>Bot</Filter>
+    </ClCompile>
+    <ClCompile Include="BotService.cpp">
+      <Filter>Bot</Filter>
+    </ClCompile>
+    <ClCompile Include="BotGameRPS.cpp">
+      <Filter>Bot\Games</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="GenProcedures.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="BotRegsterService.h">
+      <Filter>Bot</Filter>
+    </ClInclude>
+    <ClInclude Include="BotService.h">
+      <Filter>Bot</Filter>
+    </ClInclude>
+    <ClInclude Include="BotGameRPS.h">
+      <Filter>Bot\Games</Filter>
+    </ClInclude>
+    <ClInclude Include="GenDiscordNameClass.h">
+      <Filter>Bot</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="DB.xml">
+      <Filter>DB</Filter>
+    </Xml>
+    <Xml Include="Discord.xml">
+      <Filter>Bot</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Common\Procedure\GenProcedures.bat">
+      <Filter>DB</Filter>
+    </None>
+    <None Include="..\Common\DiscordNameClass\GenDiscordNameClass.bat">
+      <Filter>Bot</Filter>
+    </None>
+  </ItemGroup>
+</Project>
