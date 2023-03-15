@@ -139,7 +139,7 @@ void BotRegsterService::ValidateNickName(const WCHAR* v)
 
 	if (regex_match(v, OUT ret, reg) == false)
 	{
-		throw RegstrationException(ERRORNO::INVAILD);
+		throw RegstrationException(ERRORNO::INVALID);
 	}
 	GConsoleLogger->WriteStdOutWithTime(Color::BLUE, L"%ws: 유효성 검사 통과 성공\n", v);
 }
@@ -214,7 +214,7 @@ void BotRegsterService::RegisterExcute(const WCHAR* v, int64 id)
 
 void BotRegsterService::ChangeMemberRole(const WCHAR* v, const dpp::snowflake& id)
 {
-	const dnc::Names names = GBotManager->GetNames();
+	const DNC::Names names = GBotManager->GetNames();
 
 	AddMemberRole(GBotManager->GetServer()->_id, id, GBotManager->GetServer()->_roles[names.roles._adventurer]->_id);
 	GConsoleLogger->WriteStdOutWithTime(Color::BLUE, L"%ws: 역할 부여 성공\n", v);

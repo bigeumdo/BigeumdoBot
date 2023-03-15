@@ -2,7 +2,7 @@
 
 enum class ERRORNO : int8
 {
-	INVAILD = 1,
+	INVALID = 1,
 	OVERLAP,
 	FAILURE,
 	ALREADY
@@ -15,7 +15,7 @@ public:
 	{
 		switch (err)
 		{
-		case ERRORNO::INVAILD:
+		case ERRORNO::INVALID:
 			_messageDiscord = u8"옳바르지 않은 형식입니다. 다시 시도해주세요.";
 			_messageConsole = L"유효성 검사 통과 실패";
 			_code = 1;
